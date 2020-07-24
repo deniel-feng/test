@@ -1,12 +1,8 @@
 /*
   * @Created by 冯赛 on 2020/7/24 0024 14:21
 */
-import Vue from "vue/types/vue";
 const { exec } = require('child_process');
 const { writeFile } = require('fs');
-
-Vue.config.productionTip = false
-
 
 // console.log(readFile);
 // readFile('./commit.txt', (err, data) => {
