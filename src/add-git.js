@@ -3,6 +3,7 @@
 */
 const { exec } = require('child_process');
 const { writeFile } = require('fs');
+const { join } = require('path');
 
 // console.log(readFile);
 // readFile('./commit.txt', (err, data) => {
@@ -24,7 +25,7 @@ exec(`git log -1 --pretty=format:"web_commit_time=%cd,web_commit_message=%s,web_
 		}
 	});
 	const value = `export default ${JSON.stringify(obj)}`;
-	writeFile('commit.js', value, err => {
+	writeFile(join(__dirname, './commit.js'), value, err => {
 		if (err) throw err;
 	})
 });
