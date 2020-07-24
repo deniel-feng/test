@@ -35,6 +35,9 @@
     },
     "rules": {}
   },
+	"gitHooks": {
+		"pre-push": "node ./src/add-git"
+	},
   "browserslist": [
     "> 1%",
     "last 2 versions",
