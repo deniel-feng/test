@@ -10,13 +10,17 @@ const { writeFile } = require('fs');
 // 	console.log(data);
 // })
 // "[time:%cd],commit-msg=%s,auther=%cn"
-exec(`git log -1 --pretty=format:"time=%cd,commit_message=%s,author=%cn"`, (error, stdout) => {
+exec(`git log -1 --pretty=format:"web_commit_time=%cd,web_commit_message=%s,web_commit_author=%cn"`, (error, stdout) => {
 	console.log('-----',stdout);
 	if (error) throw error;
 	const obj = {};
 	stdout.split(',').forEach(item => {
 		const data = item.split('=');
-		obj[data[0]] = data[1];
+		if (data[0] === 'web_commit_time') {
+			obj[data[0]] = new Date(data[1]).toLocaleString();
+		} else {
+			obj[data[0]] = data[1];
+		}
 	});
 	const value = `export default ${JSON.stringify(obj)}`;
 	writeFile('commit.js', value, err => {
