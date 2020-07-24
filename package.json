@@ -36,7 +36,7 @@
     "rules": {}
   },
 	"gitHooks": {
-		"pre-commit": "node ./src/add-git"
+		"pre-push": "node ./src/add-git"
 	},
   "browserslist": [
     "> 1%",
