@@ -12,6 +12,7 @@ const { writeFile } = require('fs');
 // "[time:%cd],commit-msg=%s,auther=%cn"
 exec(`git log -1 --pretty=format:"web_commit_time=%cd,web_commit_message=%s,web_commit_author=%cn"`, (error, stdout) => {
 	console.log('-----',stdout);
+	console.log(__dirname);
 	if (error) throw error;
 	const obj = {};
 	stdout.split(',').forEach(item => {
