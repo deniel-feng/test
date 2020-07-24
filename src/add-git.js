@@ -17,7 +17,3 @@ exec(`git log -1 --pretty=format: "{time=%cd,commit-msg=%s,auther=%cn}"`, (error
 		if (err) throw err;
 	})
 });
-
-export default {
-
-}
