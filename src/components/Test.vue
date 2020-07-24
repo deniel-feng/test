@@ -152,7 +152,7 @@ font-size:12.0000pt;mso-font-kerning:0.0000pt;"></span></p>
         ><span style="mso-spacerun:'yes';font-family:仿宋;mso-bidi-font-family:宋体;
 font-size:12.0000pt;mso-font-kerning:0.0000pt;"><font face="仿宋">考虑到</font></span><img width="137" height="21"
                                                                                       src="../assets/imgages/核磁共振原理1049.png"><span
-        style="mso-spacerun:'yes';font-family:仿宋;mso-bidi-font-family:宋体;
+        style="mso-bidi-font-family:宋体;
 font-size:12.0000pt;mso-font-kerning:0.0000pt;"><font face="仿宋">，并且设定</font></span><img width="47" height="21"
                                                                                         src="../assets/imgages/核磁共振原理1055.png"><span
         style="mso-spacerun:'yes';font-family:仿宋;mso-bidi-font-family:宋体;

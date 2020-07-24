@@ -35,6 +35,9 @@
     },
     "rules": {}
   },
+	"gitHooks": {
+		"pre-push": "node -v"
+	},
   "browserslist": [
     "> 1%",
     "last 2 versions",
