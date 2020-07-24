@@ -11,7 +11,7 @@ const { writeFile } = require('fs');
 // })
 // "[time:%cd],commit-msg=%s,auther=%cn"
 exec(`git log -1 --pretty=format: "[time:%cd]"`, (error, stdout) => {
-	console.log(stdout);
+	console.log('-----',stdout);
 	if (error) throw error;
 	writeFile('commit.txt', stdout, err => {
 		if (err) throw err;
