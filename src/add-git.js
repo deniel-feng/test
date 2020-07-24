@@ -5,15 +5,8 @@ const { exec } = require('child_process');
 const { writeFile } = require('fs');
 const { join } = require('path');
 
-// console.log(readFile);
-// readFile('./commit.txt', (err, data) => {
-// 	if (err) throw err;
-// 	console.log(data);
-// })
-// "[time:%cd],commit-msg=%s,auther=%cn"
 exec(`git log -1 --pretty=format:"web_commit_time=%cd,web_commit_message=%s,web_commit_author=%cn"`, (error, stdout) => {
-	console.log('-----',stdout);
-	console.log(__dirname);
+	console.log(333333);
 	if (error) throw error;
 	const obj = {};
 	stdout.split(',').forEach(item => {
