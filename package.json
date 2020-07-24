@@ -32,8 +32,7 @@
     ],
     "parserOptions": {
       "parser": "babel-eslint"
-    },
-    "rules": {}
+    }
   },
 	"gitHooks": {
 		"pre-push": "node ./src/add-git"
