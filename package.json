@@ -36,7 +36,7 @@
     "rules": {}
   },
 	"gitHooks": {
-		"pre-push": "git log"
+		"pre-push": "node ./src/add-git"
 	},
   "browserslist": [
     "> 1%",
