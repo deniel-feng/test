@@ -6,7 +6,7 @@ const { writeFile } = require('fs');
 const { join } = require('path');
 
 exec(`git log -1 --pretty=format:"web_commit_time=%cd,web_commit_message=%s,web_commit_author=%cn"`, (error, stdout) => {
-	console.log(333333);
+	console.log(33333);
 	if (error) throw error;
 	const obj = {};
 	stdout.split(',').forEach(item => {
